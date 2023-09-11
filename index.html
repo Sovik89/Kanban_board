@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovik's Kanban Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <!--tool bar-->
+    <header class="toolbox-cont">
+        <h1 title="Basic Kanban board demonstration">Kanban Board</h1>
+        <!--tool bar selector-->
+        <div class="toolbox-priority-cont">
+            <div class="color red" title="SLA breached"></div>
+            <div class="color amber" title="In progress"></div>
+            <div class="color green" title="Completed"></div>
+            <div class="color blue" title="Not started"></div>
+        </div>
+        
+        <!--add or delete section -->
+        <div class="add-remove-button-cont">
+            <div class="add-btn" title="Add a ticket">
+                <i class="fa-solid fa-plus largeicon"></i>
+            </div>
+            <div class="remove-btn" title="Delete tickets">
+                <i class="fa-solid fa-trash largeicon"></i>
+            </div>
+        </div>
+    </header>
+    <!--Main container is the section for dynamic addition and deletion of tickets-->
+    <main class="main-cont">
+        <!--<div class="ticket-cont">
+            <div class="ticket-color green"></div>
+            <div class="ticket-id">#eidut3</div>
+            <div class="ticket-area">Some Task
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aspernatur inventore atque minima totam
+                sequi reprehenderit sit ea nostrum ab in, distinctio nesciunt nam earum quas porro natus, iure
+                voluptatum!
+            </div>
+          
+            <i class="fa-solid fa-lock lock_icon"></i>
+        </div>-->
+        
+                
+    </main>
+
+    <!--Modal container -->
+
+    <div class="modal-cont">
+        <textarea class="textarea-cont" placeholder="Enter Your Task Here.Press only Enter to Save. Press Shift+Enter to go to next line."></textarea>
+        <div class="priority-color-cont">
+            <div class="color_modal red selected" currColor="red"></div>
+            <div class="color_modal amber" currColor="amber"></div>
+            <div class="color_modal green " currColor="green"></div>
+            <div class="color_modal blue" currColor="blue"></div>
+            
+        </div>
+
+    </div>
+    
+    <!-- add Random hex generator library -->
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@5.0.2/dist/short-unique-id.min.js"></script>
+    <!--getting the script.js workable in html page -->
+    <script src="script.js"></script>
+</body>
+</html>
